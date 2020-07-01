@@ -7,12 +7,13 @@ const knex = require('knex')
 const db = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
+    host : 'postgresql-pointy-09992',
     user : 'postgres',
     password : 'test',
     database : 'smartbrain'
   }
 });
+
 
 const app = express()
 
