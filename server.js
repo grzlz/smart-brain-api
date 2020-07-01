@@ -67,7 +67,7 @@ app.post('/register', (req, res) => {
 		.then(trx.commit)
 		.catch(trx.rollback)
 	})
-	.catch(err => res.json('error'))
+	.catch(err => res.json('error al ingresar'))
 })
 
 app.get('/profile/:id', (req, res) => {
